@@ -28,7 +28,7 @@ public:
 	}
 
 	friend ostream& operator<< (ostream& os, const NumarComplex& nrC) {
-		os << nrC.re << ((nrC.im >= 0) ? "+" : "") << nrC.im << "i";
+		os << nrC.re << ((nrC.im >= 0.0) ? "+" : "") << nrC.im << "i";
 		return os;
 	}
 
@@ -93,7 +93,7 @@ public:
 
 int main() {
 
-	NumarComplex z1(1, 1), z2(2, 2);
+	NumarComplex z1(1.0, 1.0), z2(2.0, 2.0);
 	double x1(3.5), x2(4.7);
 
 	cout << "Suma:\n";
