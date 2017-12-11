@@ -91,6 +91,12 @@ int main() {
 	for (const Animal* animal : males)
 		animal->reveal();
 
+	for (const Animal* animal : females)
+		delete animal;
+
+	for (const Animal* animal : males)
+		delete animal;
+
 	system("pause");
 
 	return 0;
